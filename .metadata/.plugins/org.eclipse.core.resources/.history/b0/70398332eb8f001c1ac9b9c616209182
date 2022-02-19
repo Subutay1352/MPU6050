@@ -1,0 +1,35 @@
+/
+
+#include "sensordriver.h"
+#include "stm32f4xx_hal.h"
+
+
+uint8_t sensor_read_register8(uint8_t chipAdd, uint8_t regAdd)
+
+{
+
+
+
+
+}
+uint16_t sensor_read_register16(uint16_t adress)
+{
+
+
+
+
+}
+sensor_status_e sensor_write_register8(uint8_t adress, uint8_t value)
+{
+
+
+
+
+}
+sensor_status_e sensor_write_register16(uint16_t adress, uint16_t value)
+{
+
+
+
+
+}

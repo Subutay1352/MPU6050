@@ -1,0 +1,17 @@
+/*
+ * mpu6050.h
+ *
+ *  Created on: 17 Şub 2022
+ *      Author: kmlsh
+ */
+
+#ifndef HWDRIVERS_MPU6050_H_
+#define HWDRIVERS_MPU6050_H_
+
+#include <stdint.h>
+#include "stm32f4xx.h"
+
+uint16_t MPU6050_TestSensor();
+int32_t MPU6050_ReadID(void);
+
+#endif /* HWDRIVERS_MPU6050_H_ */

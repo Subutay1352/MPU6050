@@ -1,0 +1,9 @@
+sensorDriver.c:17:17:sensor_test_device	24	static
+sensorDriver.c:34:9:sensor_read_register8	40	static
+sensorDriver.c:58:10:sensor_read_register16	40	static
+sensorDriver.c:83:17:sensor_write_register8	40	static
+sensorDriver.c:101:17:sensor_write_register16	40	static
+sensorDriver.c:127:17:sensor_read_bytes	40	static
+sensorDriver.c:140:17:sensor_write_bytes	40	static
+sensorDriver.c:153:10:bytesToUint16_LittleEndian	16	static
+sensorDriver.c:158:10:bytesToUint16_BigEndian	16	static

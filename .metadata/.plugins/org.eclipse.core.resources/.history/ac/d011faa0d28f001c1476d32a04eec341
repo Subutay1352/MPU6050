@@ -1,0 +1,13 @@
+/*
+ * mpu6050.h
+ *
+ *  Created on: 17 Şub 2022
+ *      Author: kmlsh
+ */
+
+#ifndef HWDRIVERS_MPU6050_H_
+#define HWDRIVERS_MPU6050_H_
+
+
+
+#endif /* HWDRIVERS_MPU6050_H_ */

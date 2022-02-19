@@ -1,0 +1,37 @@
+
+
+#include "mpu6050.h"
+#include "sensordriver.h"
+
+extern I2C_HandleTypeDef hi2c1;
+
+uint8_t sensor_read_register8(uint8_t chipAdd, uint8_t regAdd);
+uint16_t sensor_read_register16(uint8_t chipAdd, uint8_t regAdd);
+sensor_status_e sensor_write_register16(uint8_t chipAdd,uint8_t regAdd, uint16_t value);
+sensor_status_e sensor_write_register8(uint8_t chipAdd,uint8_t regAdd , uint8_t value);
+
+
+
+sensor_status_e MPU6050_TestSensor()
+{
+
+	sensor_status_e retVal;
+	retVal= sensor_test_device();
+
+}
+
+
+int32_t MPU6050_ReadID(void) {
+
+
+	int8_t buffer[1];
+
+	HAL_StatusTypeDef status ;
+	uint8_t id;
+	id = sensor_read_register8(MPU6050_I2C_ADRESS_AD0,MPU_REG_WHO_AM_I);
+
+	status = HAL_I2C_Mem_Read(&hi2c1, MPU6050_I2C_ADRESS_AD0, MPU_REG_WHO_AM_I, 1, buffer, 1, 100);
+
+
+}
+
